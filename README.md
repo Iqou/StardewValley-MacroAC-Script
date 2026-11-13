@@ -26,8 +26,11 @@ It could count as cheating though, since there is a timer built in which makes t
 
 You can adjust the time it takes to cancel the animation by changing the `sleep` variable in the code. But be aware that if it's too fast, the animation cancelling process may get cancelled too early causing the player to cancel their action.
 
-- **DOWNSIDE** The only downside is that this macro would only work on tools like pickaxe, axe, sword, hammer. For other tools it would cancel its animation too early.
+- **DOWNSIDE**
+  - This macro would only work on tools like pickaxe, axe, hammer. For other tools that has a slower animation would cancel its animation too early.
+  - Your X key will be unusable for typing when the script is running as it will run the code that involves it to type `r` and `delete`.
 
-- **NOTE** You should unbind `X` in the controls as the alternative for right clicking in stardew valley if you want to use that hotkey for animation cancelling because the default code uses `X` for the script.
+- **NOTE**
+  - You should unbind `X` in the controls as the alternative for right clicking in stardew valley if you want to use that hotkey for animation cancelling because the default code uses `X` for the script.
 
 The code I provide can be adjusted to your liking and distributed freely :) Hopefully this helps you with your Stardew Valley gameplay!
