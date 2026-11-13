@@ -20,7 +20,9 @@ It could count as cheating though, since there is a timer built in which makes t
 
 # How the code works
 
-The code works by sending key events to the game to simulate the animation cancelling process. Animation cancelling works because you press `Right shift` + `R` + `Delete` at the same time to cancel the animation. With the code, you can press `Mouse1` Then `Right shift` + `R` + `Delete` at the a certain amount of time with only one button press to cancel the animation reliably.
+- [3in1 Macro](https://github.com/Iqou/StardewValley-MacroAC-Script/blob/main/3in1_Macro.ahk)
+  - The code works by sending key events to the game to simulate the animation cancelling process. Animation cancelling works because you press `Right shift` + `R` + `Delete` at the same time to cancel the animation.
+  - With the code, you can press `Mouse1` Then `Right shift` + `R` + `Delete` at the a certain amount of time with only one button press to cancel the animation reliably.
 
 You can adjust the time it takes to cancel the animation by changing the `sleep` variable in the code. But be aware that if it's too fast, the animation cancelling process may get cancelled too early causing the player to cancel their action.
 
