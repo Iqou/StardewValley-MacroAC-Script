@@ -2,10 +2,10 @@
 
 There are a lot of repositories out there that have already implemented animation cancelling macros. The difference between this and those is that this one has a timer built in so you wouldn't need to manually cancel animations with two button clicks! It also has a two-button macro that uses the usual two-button key combo to cancel the animation for those who prefer the two-button method especially for items with different timing requirements.
 
-I remembered playing around 2022 and found out about animation cancelling macros with only a button click through some videos on YouTube. It wasn't easy to find since it had little views and it's just a code in the description as well as outdated since it uses AHK v1.0. So, I made this repository for me and other people who want to use one button to cancel animations as well as two-button for those who prefer the two-button method and to interchange between the two methods. :D
+I remembered playing around 2022 and found out about animation cancelling macros with only a button click through some videos on YouTube. It wasn't easy to find since it had little views and it's just a code in the description as well as outdated since it uses AHK v1.0. So, I made this repository for me and other people who want to use one button to cancel animations as well as two-button for those who prefer the two-button method and to interchange between the two method.:D
 
 > **Credit:**
-> The one button script I originally found it is from [@Ryokishine](https://www.youtube.com/watch?v=j6ZDdgV7PbI).
+> The one button script I originally found it from [@Ryokishine](https://www.youtube.com/watch?v=j6ZDdgV7PbI).
 > I used [TheValiantSun](https://github.com/theValiantSun/stardew-AC-scripts/tree/main) repository as a reference to make the two button script.
 
 ---
@@ -39,6 +39,7 @@ With the code, you can press `Mouse1` then `Right Shift` + `R` + `Delete` at a c
 The XButton2 macro uses the usual two-button key combo (Click `Mouse1` then `Right Shift` + `R` + `Delete`) to cancel the animation. You time it yourself. In this code, i used the button `Mouse 5` though.
 
 - **Adjusting the Speed:** You can adjust the time it takes to cancel the animation by changing the `Sleep` variable in the code. Just be aware that if it's too fast, the animation cancelling process may get cancelled too early, causing the player to cancel their action.
+- **Game Mode:** The Default game mode for the script is Vanilla, in the code there is `#Hotif WinActive("ahk_exe Stardew Valley.exe")` line at the top of the script that makes it run only when the game is active. You can change it to Modded by uncommenting the `#Hotif` line at the top of the script. You can also remove the `#Hotif` line to make the script work in both game modes but it would run the script even when you're tabbed out of the game.
 
 **Downsides to keep in mind:**
 
@@ -47,6 +48,7 @@ The XButton2 macro uses the usual two-button key combo (Click `Mouse1` then `Rig
 
 **NOTE**
 
+> Do not forget to comment the `#Hotif` line based on your game mode (Modded or Vanilla).
 > You should unbind `X` in the controls as the alternative for right-clicking in Stardew Valley if you want to use that hotkey for animation cancelling, because the default code uses `X` for the script.
 
 ---

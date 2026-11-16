@@ -4,9 +4,13 @@ How it works:
 key combo to animation cancel within 125ms and release the key combo after 10 ms.
 - For the Xbutton2, it is the normal two button key combo that the usual animation cancel script uses. You can use these interchangeably with the one button so you
 could do animation cancel with other tools that may need a two-button key combo.
+- There is also #Hotif code to ensure that the script only runs when playing Stardew Valley window is active.
 */
 
 #Requires AutoHotkey v2.0
+
+; #Hotif WinActive("ahk_exe StardewModdingAPI.exe") ; Uncomment this if you're playing Stardew Valley Modded
+#Hotif WinActive("ahk_exe Stardew Valley.exe") ; Uncomment this if you're playing Stardew Valley Vanilla
 
 ; You can change the "x" to any key you want. Preferably the key that you don't use for any other purpose.
 x:: {
@@ -31,3 +35,5 @@ x:: {
     }
     Sleep 20
 }
+
+#Hotif
